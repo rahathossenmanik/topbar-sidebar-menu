@@ -14,6 +14,6 @@ npm install
 npm start
 ```
 
-# Original HTML/Bootstrap template
+# Contact
 
 <a href="mailto:rahathossenmanik@gmail.com">rahathossenmanik@gmail.com</a>
