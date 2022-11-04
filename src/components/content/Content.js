@@ -18,10 +18,10 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
 				<Route exact path='/home' component={() => 'Home'} />
 				<Route exact path='/Page-1' component={() => 'Page-1'} />
 				<Route exact path='/Page-2' component={() => 'Page-2'} />
-				<Route exact path='/page-1' component={() => 'page-1'} />
-				<Route exact path='/page-2' component={() => 'page-2'} />
-				<Route exact path='/page-3' component={() => 'page-3'} />
-				<Route exact path='/page-4' component={() => 'page-4'} />
+				<Route exact path='/mongo' component={() => 'Mongo DB'} />
+				<Route exact path='/express' component={() => 'Express JS'} />
+				<Route exact path='/react' component={() => 'React JS'} />
+				<Route exact path='/node' component={() => 'Node JS'} />
 			</Switch>
 		</Container>
 	</Container>

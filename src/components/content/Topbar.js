@@ -42,23 +42,23 @@ const Topbar = ({ toggleSidebar }) => {
 			<Collapse isOpen={topbarIsOpen} navbar>
 				<Nav className='ml-auto' navbar>
 					<NavItem>
-						<NavLink tag={Link} to={'/page-1'}>
-							page 1
+						<NavLink tag={Link} to={'/mongo'}>
+							MongoDB
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink tag={Link} to={'/page-2'}>
-							page 2
+						<NavLink tag={Link} to={'/express'}>
+							Express
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink tag={Link} to={'/page-3'}>
-							page 3
+						<NavLink tag={Link} to={'/react'}>
+							React
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink tag={Link} to={'/page-4'}>
-							page 4
+						<NavLink tag={Link} to={'/node'}>
+							Node JS
 						</NavLink>
 					</NavItem>
 				</Nav>
