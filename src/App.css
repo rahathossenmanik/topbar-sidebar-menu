@@ -4,10 +4,8 @@
 	align-items: stretch;
 }
 
-@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
-
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: sans-serif;
 	background: #fafafa;
 }
 
@@ -102,7 +100,7 @@ li a.dropdown-toggle::after {
 	height: 100vh;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 	body {
 		overflow: hidden;
 	}

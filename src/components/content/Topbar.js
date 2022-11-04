@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -14,6 +14,18 @@ import { Link } from 'react-router-dom';
 
 const Topbar = ({ toggleSidebar }) => {
 	const [topbarIsOpen, setTopbarOpen] = useState(true);
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	useEffect(() => {
+		const resizeWindow = () => setWindowWidth(window.innerWidth);
+		window.addEventListener('resize', resizeWindow);
+		return () => window.removeEventListener('resize', resizeWindow);
+	});
+
+	useEffect(() => {
+		windowWidth <= 576 ? setTopbarOpen(false) : setTopbarOpen(true);
+	}, [windowWidth]);
+
 	const toggleTopbar = () => setTopbarOpen(!topbarIsOpen);
 
 	return (
@@ -21,7 +33,7 @@ const Topbar = ({ toggleSidebar }) => {
 			color='light'
 			light
 			className='navbar shadow-sm p-3 bg-white rounded'
-			expand='md'
+			expand='sm'
 		>
 			<Button color='info' onClick={toggleSidebar}>
 				<FontAwesomeIcon icon={faAlignLeft} />

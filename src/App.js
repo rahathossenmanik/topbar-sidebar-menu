@@ -17,7 +17,7 @@ const App = () => {
 	});
 
 	useEffect(() => {
-		windowWidth <= 576 ? setSidebarOpen(false) : setSidebarOpen(true);
+		windowWidth <= 768 ? setSidebarOpen(false) : setSidebarOpen(true);
 	}, [windowWidth]);
 
 	const toggleSidebar = () => setSidebarOpen(!sidebarIsOpen);
