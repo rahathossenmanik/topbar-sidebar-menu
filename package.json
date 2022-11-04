@@ -1,8 +1,8 @@
 {
-  "name": "reactstrap-sidebare",
+  "name": "topbar-sidebar-menu",
   "version": "0.1.0",
-  "description": "A Simple SideBar Navigation written in React",
-  "author": "Boukrouh Bilal",
+  "description": "Topbar and SideBar Menu with Reactstrap and Bootstrap",
+  "author": "Manik Hosen",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.2.0",
