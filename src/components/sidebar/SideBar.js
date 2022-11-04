@@ -24,7 +24,6 @@ const SideBar = ({ isOpen, toggle }) => (
 		</div>
 		<div className='side-menu'>
 			<Nav vertical className='list-unstyled pb-3'>
-				<p>Dummy Heading</p>
 				<SubMenu title='Home' icon={faHome} items={submenus[0]} />
 				<NavItem>
 					<NavLink tag={Link} to={'/about'}>
