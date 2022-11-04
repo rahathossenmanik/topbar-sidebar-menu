@@ -14,10 +14,6 @@ npm install
 npm start
 ```
 
-# Preview
-
-<a><img src="/preview.gif"></img></a>
-
 # Original HTML/Bootstrap template
 
 <a href="mailto:rahathossenmanik@gmail.com">rahathossenmanik@gmail.com</a>
