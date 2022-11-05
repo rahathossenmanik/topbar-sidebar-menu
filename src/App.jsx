@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import SideBar from "./components/sidebar/SideBar";
 import Content from "./components/content/Content";
-import "./assets/index.css";
+import "./assets/scss/index.scss";
 
 const App = () => {
   const [sidebarIsOpen, setSidebarOpen] = useState(true);
