@@ -4,7 +4,7 @@ Navigation done with React Router DOM.
 Menu Layout for a full featured app is fully completed in this project.
 
 # View Live
-[Topbar and Sidebar Menu](https://191w8x-3000.preview.csb.app/))
+[Topbar and Sidebar Menu](https://191w8x-3000.preview.csb.app/)
 
 # Getting Started Web 
 1.	Install all latest node, yarn and dependency packages version
