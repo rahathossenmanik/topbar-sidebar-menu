@@ -131,6 +131,12 @@ li a.dropdown-toggle::after {
   max-width: 100% !important;
 }
 
-.sidebar.nav-link {
-  color: #fff;
+.sidebar .nav-link {
+  color: #fff !important;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus {
+  color: #175c8d !important;
+  background-color: #fff !important;
 }
