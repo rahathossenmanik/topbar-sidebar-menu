@@ -8,9 +8,10 @@ import {
   faImage,
   faCopy,
 } from "@fortawesome/free-solid-svg-icons";
-import { NavItem, NavLink, Nav } from "reactstrap";
+import { NavItem, NavLink, Nav, Container } from "reactstrap";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import IssueFreek from "./../../assets/images/if-white.png";
 
 import SubMenu from "./SubMenu";
 
@@ -20,9 +21,10 @@ const SideBar = ({ isOpen, toggle }) => (
       <span color="info" onClick={toggle} style={{ color: "#fff" }}>
         &times;
       </span>
-      <h3>Bootstrap Sidebar</h3>
+      <img src={IssueFreek} alt="IssueFreek Logo" className="py-1 px-1 w-75" />
     </div>
-    <div className="side-menu">
+    <hr className="m-0" />
+    <div className="side-menu mt-4">
       <Nav vertical className="list-unstyled pb-3">
         <NavItem>
           <NavLink tag={Link} to={"/home"}>

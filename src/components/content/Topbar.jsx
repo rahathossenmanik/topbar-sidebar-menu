@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAlignLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAlignLeft,
+  faBarsStaggered,
+  faListDots,
+  faListUl,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   Navbar,
   Button,
@@ -11,6 +16,7 @@ import {
   NavLink,
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import IssueFreek from "./../../assets/images/if-color.png";
 
 const Topbar = ({ toggleSidebar }) => {
   const [topbarIsOpen, setTopbarOpen] = useState(true);
@@ -36,8 +42,14 @@ const Topbar = ({ toggleSidebar }) => {
       expand="sm"
     >
       <Button color="info" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={faAlignLeft} />
+        <FontAwesomeIcon icon={faBarsStaggered} />
       </Button>
+      <img
+        src={IssueFreek}
+        alt="IssueFreek Logo"
+        style={{ display: windowWidth <= 768 ? "block" : "none", width: 150 }}
+        className="ms-2 mt-1"
+      />
       <NavbarToggler onClick={toggleTopbar} />
       <Collapse isOpen={topbarIsOpen} navbar>
         <Nav className="ms-auto" navbar>
