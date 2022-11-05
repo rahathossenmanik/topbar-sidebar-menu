@@ -1,18 +1,22 @@
-# reactstrap-basic-sidebar
+# Introduction 
+This project have Responsive Sidbar and Topbar menu designed with Reactstrap and Bootstrap.
+Navigation done with React Router DOM.
+Menu Layout for a full featured app is fully completed in this project.
 
-Static collapsible Bootstrap sidebar menu
+# View Live
+[Login Registration UI Typescript](https://m4kgo7-3000.preview.csb.app/)
 
-# Installation
-
-```
-npm install
-```
-
-# run
-
-```
-npm start
-```
+# Getting Started Web 
+1.	Install all latest node, yarn and dependency packages version
+2.	Clone the repo in your PC 
+3.	Install Yarn on parent directory
+   ```yarn install```
+4.	Run project
+    ```yarn start```
+    
+# Build and Test
+Run following command
+   ```yarn run build```
 
 # Elements Used
 
@@ -26,5 +30,4 @@ npm start
 8.  Classnames 2.3.2
 
 # Contact
-
-<a href="mailto:rahathossenmanik@gmail.com">rahathossenmanik@gmail.com</a>
+[rahathossenmanik@gmail.com](mailto:rahathossenmanik@gmail.com)
