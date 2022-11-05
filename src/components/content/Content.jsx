@@ -1,30 +1,30 @@
-import React from 'react';
-import classNames from 'classnames';
-import { Container } from 'reactstrap';
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import classNames from "classnames";
+import { Container } from "reactstrap";
+import { Routes, Route } from "react-router-dom";
 
-import Topbar from './Topbar';
+import Topbar from "./Topbar";
 
 const Content = ({ sidebarIsOpen, toggleSidebar }) => (
-	<Container className={classNames('p-0', { 'is-open': sidebarIsOpen })}>
-		<Topbar toggleSidebar={toggleSidebar} />
-		<Container fluid className='content mt-3'>
-			<Switch>
-				<Route exact path='/' component={() => 'Hello'} />
-				<Route exact path='/about' component={() => 'About'} />
-				<Route exact path='/Pages' component={() => 'Pages'} />
-				<Route exact path='/faq' component={() => 'FAQ'} />
-				<Route exact path='/contact' component={() => 'Contact'} />
-				<Route exact path='/home' component={() => 'Home'} />
-				<Route exact path='/Page-1' component={() => 'Page-1'} />
-				<Route exact path='/Page-2' component={() => 'Page-2'} />
-				<Route exact path='/mongo' component={() => 'Mongo DB'} />
-				<Route exact path='/express' component={() => 'Express JS'} />
-				<Route exact path='/react' component={() => 'React JS'} />
-				<Route exact path='/node' component={() => 'Node JS'} />
-			</Switch>
-		</Container>
-	</Container>
+  <Container className={classNames("p-0", { "is-open": sidebarIsOpen })}>
+    <Topbar toggleSidebar={toggleSidebar} />
+    <Container fluid className="content mt-3">
+      <Routes>
+        <Route exact path="/" element={<h2>Hello</h2>} />
+        <Route exact path="/about" element={<h2>About</h2>} />
+        <Route exact path="/Pages" element={<h2>Pages</h2>} />
+        <Route exact path="/faq" element={<h2>FAQ</h2>} />
+        <Route exact path="/contact" element={<h2>Contact</h2>} />
+        <Route exact path="/home" element={<h2>Home</h2>} />
+        <Route exact path="/Page-1" element={<h2>Page-1</h2>} />
+        <Route exact path="/Page-2" element={<h2>Page-2</h2>} />
+        <Route exact path="/mongo" element={<h2>Mongo DB</h2>} />
+        <Route exact path="/express" element={<h2>Express JS</h2>} />
+        <Route exact path="/react" element={<h2>React JS</h2>} />
+        <Route exact path="/node" element={<h2>Node JS</h2>} />
+      </Routes>
+    </Container>
+  </Container>
 );
 
 export default Content;
